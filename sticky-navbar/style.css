@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+
+}
+
+.top-container{
+    background: url("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGNvbXB1dGVyfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-container h1{
+    color: white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.text{
+    margin: 50px 5%;
+    font-family: cursive;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: whitesmoke;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3
+    );
+    transition: background-color 0.5s;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family: cursive;
+}
+
+.navbar ul li a:hover{
+    color: rgb(243, 184, 66);
+}
+
+.navbar.active{
+    background-color: black;
+    transition: background-color 0.5s;
+}
+
+.navbar.active ul li a{
+    color: whitesmoke;
+}
